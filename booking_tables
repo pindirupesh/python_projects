@@ -1,0 +1,20 @@
+def return_maxeven(num_list):
+    evenno = []
+    for numbers in num_list:
+        if numbers % 2 == 0:
+            evenno.append(numbers)
+    return max(evenno) if evenno else None
+
+table_size = int(input("enter the no of members you have"))
+sizes = [table_size]
+
+if return_maxeven(sizes) == 4:
+    print("your table is booked")
+elif return_maxeven(sizes) == 6:
+    print("your table is booked")
+elif return_maxeven(sizes) == 8:
+    print("table is booked")
+elif return_maxeven(sizes) and return_maxeven(sizes) >= 10:
+    print("you can contact our team for the company meetings room")
+else:
+    print("tables are only available for groups of 4 , 6 and 8")
